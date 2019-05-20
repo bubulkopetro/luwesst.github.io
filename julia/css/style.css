@@ -1,0 +1,787 @@
+
+@charset "UTF-8";
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 400;
+  outline: none !important; 
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif; 
+}
+
+.container {
+  max-width: 1170px; 
+}
+
+h2 {
+  font-family: "Source Sans Pro";
+  font-size: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0; 
+}
+
+h3 {
+  font-family: "Source Sans Pro";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0; 
+}
+
+/*@keyframe {}*/
+header {
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+#goTop {
+  position: fixed;
+  bottom: 70px;
+  right: 5px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 37px;
+  background: #1d1c28;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  transform: translate(50px, 0px);
+  z-index: 9999;
+}
+
+#goTop.show {
+  transform: translate(0px, 0px);
+}
+
+.show {
+  display: block!important;
+}
+
+#goTop:hover {
+  background: #fff;
+  color: #1d1c28;
+}
+/* 1. END BODY */
+/* 2. HEADER */
+.head_top_line {
+  width: 100%;
+  background-color: #1d1c28;
+  text-align: right;
+  padding: 7px 0; 
+}
+
+a.tel_link,
+a.mssg_link {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+a.tel_link i,
+a.mssg_link i {
+  color: #3498db;
+  margin-right: 4px;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a.tel_link span,
+a.mssg_link span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+a.tel_link:hover span,
+a.mssg_link:hover span {
+  color: #3498db;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.head_menu {
+  padding: 8px 0;
+  background-color: #fff;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+a.head_logo {
+  text-decoration: none; 
+}
+
+.wrap_head_nav {
+  text-align: right;
+  padding-top: 12px; 
+}
+
+.head_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+}
+
+.head_list li {
+  display: inline-block;
+  margin-left: 10px; 
+}
+
+a.head_links {
+  color: #202020;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Myanmar Text';
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transform: skewX(-15deg);
+  -ms-transform: skewX(-15deg);
+  transform: skewX(-15deg);
+  display: inline-block;
+  padding-bottom: 2px;
+  padding-top: 10px;
+  padding-left: 17px;
+  padding-right: 14px;
+  line-height: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+a.head_links span {
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Myanmar Text';
+  -webkit-transform: skew(15deg);
+  -ms-transform: skew(15deg);
+  transform: skew(15deg);
+  display: inline-block;
+  font-weight: 600;
+}
+
+a.head_links.active {
+  background-color: #3498db;
+  color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+a.head_links:hover {
+  background-color: #3498db;
+  color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*  END HEADER */
+.main_slider_section {
+  width: 100%;
+  display: block;
+  background-image: url("../img/2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 159px;
+  padding-bottom: 150px;
+  position: relative;
+  margin-top: 101px;
+}
+
+.main_slider_section .slider_item {
+  display: block;
+  padding-top: 10px;
+}
+
+.main_slider_section .overlay_section {
+  background-color: rgba(0, 1, 42, 0.82);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main_slider_section .container {
+  position: relative;
+  z-index: 2; 
+}
+
+.main_slider_section h1 {
+  color: white;
+  font-family: 'Myanmar Text';
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin: 0; 
+}
+
+.main_slider_section h1 span {
+  font-family: 'Myanmar Text';
+  font-size: 36px;
+  font-weight: 700; 
+}
+
+.main_slider_section .slider_txt {
+  display: block;
+  margin: 0 auto;
+  margin-top: 38px;
+  max-width: 350px;
+  font-family: 'Source Sans Pro';
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff; 
+}
+
+
+
+
+/* 3.1. END Main Slider */
+
+/* 3.2. About Us */
+.about_us_section {
+  width: 100%;
+  display: block;
+  overflow: hidden; 
+}
+
+
+
+.about_us_section h3 {
+  position: relative;
+  z-index: 2;
+  font-size: 29px;
+  padding-left: 50px; 
+  text-transform: uppercase;
+  text-shadow: 1px 0px 2px rgba(0, 0, 0, .6);
+}
+
+.about_us_section ul {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px; 
+  margin-bottom: 0px;
+}
+
+.about_us_section ul li {
+  font-family: 'Source Sans Pro';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  text-shadow: 1px 0px 2px rgba(0, 0, 0, .6);
+}
+
+.about_us_section ul li:last-child {
+  margin-bottom: 0; 
+}
+
+.about_us_section h2 {
+}
+
+.about_us_section .date_list {
+  margin-right: 60px; 
+}
+/* 3.2. About Us */
+
+/* 3.3. Service */
+.service_section {
+  display: block;
+  width: 100%;
+  padding-top: 50px;
+  overflow: hidden; 
+  margin-bottom: 30px;
+}
+
+.service_section .icon_item {
+  display: inline-block;
+  width: 82px;
+  height: 82px;
+  text-align: center;
+  border: 3px solid #81ccff;
+  float: left;
+  position: relative;
+  margin-right: 25px;
+  -webkit-transition: .3s;
+  transition: .3s; 
+}
+.icon_item>img{
+  height: 76px;
+  width: 76px;
+}
+.icon_item>img:hover{
+  opacity: 0.6;
+}
+
+.service_section h2 {
+  font-family: "Source Sans Pro";
+  font-size: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 0;
+  padding-bottom: 25px;
+}
+
+.service_section .icon_item svg {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%; 
+}
+
+.service_section .icon_item svg path {
+  -webkit-transition: .3s;
+  transition: .3s; 
+}
+
+.service_section h3 {
+  color: #202020;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  display: table-cell;
+  margin-bottom: 0;
+  vertical-align: middle;
+  height: 82px;
+}
+
+.service_section .description_service {
+  margin-top: 34px;
+  font-family: 'Myriad Pro';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px; 
+}
+
+.service_box {
+  margin-bottom: 35px; 
+  padding: 0;
+}
+
+.service_box:hover .icon_item {
+  background-color: #81ccff;
+  -webkit-transition: all .3s;
+  transition: all .3s; 
+}
+
+.service_box:hover .icon_item svg path {
+  fill: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s; 
+}
+/* 3.3. END Service */
+
+/* 3.4. Work */
+.about_work_section {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 57px; 
+  position: relative;
+  background: #f0f9ff;
+}
+
+.about_work_section .left_holder {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+  
+.about_work_section h2 {
+  position: relative;
+  z-index: 2;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase; 
+}
+
+.about_work_section .sub_title {
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  display: inline-block;
+  font-family: 'Myriad Pro';
+  font-size: 14px;
+  font-weight: 400;
+  width: 50%;
+}
+
+/* 3.4. END Work */
+
+/* 3.5. Our Gallery */
+.our_gallery {
+  width: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 60px; 
+}
+
+.our_gallery h2 {
+  font-family: "Source Sans Pro";
+  font-size: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.our_gallery .sub_subject {
+  margin-top: 20px;
+  color: #202020;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+}
+
+
+
+/* 3.5. END Our Gallery */
+
+/* 3.6. Our Personal */
+.our_personal_section {
+  display: block;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 43px; 
+}
+
+.our_personal_section .container {
+  max-width: 1170px; 
+}
+
+.our_personal_section h2 {
+  padding-left: 15px;
+  font-family: "Source Sans Pro";
+  font-size: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+
+.our_personal_section .sub_subject {
+  color: #202020;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 20px;
+  display: block;
+  padding-left: 15px; 
+}
+
+.our_personal_section .personal_box {
+  margin-top: 30px; 
+}
+
+.our_personal_section .box {
+  border: 2px solid #81ccff;
+  overflow: hidden;
+  background-color: #fff;
+  color: #202020;
+  -webkit-transition: .3s;
+  transition: .3s; 
+  min-height: 465px;
+}
+
+.our_personal_section .persone_txt_overlay {
+  -webkit-transform: skewY(-13deg);
+  -ms-transform: skewY(-13deg);
+  transform: skewY(-13deg);
+  margin-top: -60px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #FFF;
+  -webkit-transition: .3s;
+  transition: .3s; 
+}
+
+.our_personal_section .persone_txt {
+  -webkit-transform: skewY(13deg);
+  -ms-transform: skewY(13deg);
+  transform: skewY(13deg); 
+}
+
+.our_personal_section .persone_name {
+  display: block;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  -webkit-transition: .1s;
+  text-transform: uppercase;
+  transition: .1s; 
+}
+  .our_personal_section .persone_position {
+  display: block;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  -webkit-transition: .1s;
+  transition: .1s; 
+  font-style: italic;
+}
+
+.our_personal_section .persone_description {
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  -webkit-transition: .1s;
+  transition: .1s; 
+}
+
+.box:hover {
+  border-color: #fff;
+  background-color: #3498db;
+  -webkit-transition: all .3s;
+  transition: all .3s; 
+}
+.box:hover .persone_txt_overlay {
+  background-color: #3498db;
+  -webkit-transition: all .3s;
+  transition: all .3s; 
+}
+
+
+.box:hover .persone_description,
+.box:hover .persone_name,
+.box:hover .persone_position {
+  color: #fff;
+  -webkit-transition: all .1s;
+  transition: all .1s; 
+}
+/* 3.7. END Box */
+
+/* 3.8. Reviews */
+.reviews_section {
+  padding-top: 60px; 
+}
+
+.reviews_section .container {
+  max-width: 1170px; 
+}
+
+.reviews_section h2 {
+  padding: 0 15px;
+  font-family: "Source Sans Pro";
+  font-size: 29px;
+  font-weight: 700;
+  text-transform: uppercase; 
+}
+
+
+
+.reviews_section .reviews_box {
+  padding: 0; 
+}
+
+.reviews_section .reviews {
+  text-align: center; 
+}
+
+.reviews_section .slick-prev:hover, .reviews_section .slick-next:hover {
+  opacity: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+
+/* 3.8. END Reviews */
+
+/* 3.9. News (Blog) */
+.blog_section {
+  width: 100%;
+  display: block;
+  background-color: #f0f9ff;
+  padding: 50px 0;
+  margin-top: 45px; 
+}
+
+.blog_section .container {
+  max-width: 1170px; 
+}
+
+.blog_section h2 {
+  padding: 0 15px;
+}
+
+.blog_section .sub_subject {
+  padding: 0 15px;
+  display: block;
+  color: #202020;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px; 
+}
+
+.blog_section .blog_news_box {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; 
+}
+.blog_section .news_txt_box {
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  padding-left: 15px; 
+}
+
+.blog_section .news_title {
+  display: block;
+  color: #202020;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase; 
+}
+.blog_section .news_count_comments i {
+  font-size: 14px;
+  margin-right: 5px; 
+}
+
+.blog_section .news_text {
+  color: #202020;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  display: block;
+}
+.blog_section .news_text {
+  display: inline-block;
+  max-width: 320px; 
+}
+/* 3.10. Feedback */
+.feedback_section {
+  width: 100%;
+  display: block;
+  padding-top: 50px;
+  position: relative;
+  padding-bottom: 65px; 
+}
+
+.feedback_section h2 {
+  font-family: "Source Sans Pro";
+  font-size: 29px;
+  font-weight: 700;
+  text-transform: uppercase; 
+}
+
+.feedback_section .sub_subject {
+  display: block;
+  margin-top: 0;
+  color: #202020;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px; 
+}
+
+.feedback_section form {
+  display: block;
+  margin-top: 10px; 
+}
+
+.feedback_section .wrap_input_box {
+  display: inline-block;
+  max-width: 239px;
+  width: 100%;
+  margin-right: 25px;
+  vertical-align: top;
+  margin-bottom: 20px;
+  position: relative; 
+}
+ 
+.feedback_section .wrap_input_box label {
+  position: absolute;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  top: 52%;
+  left: 21px;
+  color: #8c8c8c;
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 0;
+  -webkit-transition: .3s;
+  transition: .3s; 
+}
+
+.feedback_section input {
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #8c8c8c;
+  padding: 0 21px;
+}
+
+.feedback_section .wrap_input_box.message {
+  max-width: 507px;
+}
+
+.feedback_section .wrap_input_box.message label {
+  top: 18px;
+}
+
+.feedback_section textarea {
+  width: 100%;
+  display: block;
+  border: 1px solid #8c8c8c;
+  resize: none;
+  background-color: #fff;
+  height: 135px;
+  padding: 14px 21px;
+}
+
+.feedback_section input[type=submit] {
+  background-color: #3498db;
+  max-width: 239px;
+  border: 2px #3498db solid;
+  float: right;
+  margin-right: 47px;
+  color: #feffff;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
